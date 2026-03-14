@@ -1,0 +1,289 @@
+[
+  {
+    "name": "Alexandria",
+    "side": "A",
+    "startingResource": "G",
+    "stages": [
+      {
+        "requirements": { "resources": "SS" },
+        "effects": { "points": 3 }
+      },
+      {
+        "requirements": { "resources": "OO" },
+        "effects": {
+          "production": {
+            "resources": "W/S/O/C",
+            "isSellable": false
+          }
+        }
+      },
+      {
+        "requirements": { "resources": "GG" },
+        "effects": { "points": 7 }
+      }
+    ]
+  },
+  {
+    "name": "Alexandria",
+    "side": "B",
+    "startingResource": "G",
+    "stages": [
+      {
+        "requirements": { "resources": "CC" },
+        "effects": {
+          "production": {
+            "resources": "W/S/O/C",
+            "isSellable": false
+          }
+        }
+      },
+      {
+        "requirements": { "resources": "WW" },
+        "effects": {
+          "production": {
+            "resources": "G/P/L",
+            "isSellable": false
+          }
+        }
+      },
+      {
+        "requirements": { "resources": "SSS" },
+        "effects": { "points": 7 }
+      }
+    ]
+  },
+  {
+    "name": "Babylon",
+    "side": "A",
+    "startingResource": "C",
+    "stages": [
+      {
+        "requirements": { "resources": "CC" },
+        "effects": { "points": 3 }
+      },
+      {
+        "requirements": { "resources": "WWW" },
+        "effects": { "science": "ANY" }
+      },
+      {
+        "requirements": { "resources": "CCCC" },
+        "effects": { "points": 7 }
+      }
+    ]
+  },
+  {
+    "name": "Babylon",
+    "side": "B",
+    "startingResource": "C",
+    "stages": [
+      {
+        "requirements": { "resources": "CL" },
+        "effects": { "points": 3 }
+      },
+      {
+        "requirements": { "resources": "WWG" },
+        "effects": { "action": "PLAY_LAST_CARD" }
+      },
+      {
+        "requirements": { "resources": "CCCP" },
+        "effects": { "science": "ANY" }
+      }
+    ]
+  },
+  {
+    "name": "Ephesos",
+    "side": "A",
+    "startingResource": "P",
+    "stages": [
+      {
+        "requirements": { "resources": "SS" },
+        "effects": { "points": 3 }
+      },
+      {
+        "requirements": { "resources": "WW" },
+        "effects": { "gold": 9 }
+      },
+      {
+        "requirements": { "resources": "PP" },
+        "effects": { "points": 7 }
+      }
+    ]
+  },
+  {
+    "name": "Ephesos",
+    "side": "B",
+    "startingResource": "P",
+    "stages": [
+      {
+        "requirements": { "resources": "SS" },
+        "effects": { "gold": 4, "points": 2 }
+      },
+      {
+        "requirements": { "resources": "WW" },
+        "effects": { "gold": 4, "points": 3 }
+      },
+      {
+        "requirements": { "resources": "GPL" },
+        "effects": { "gold": 4, "points": 5 }
+      }
+    ]
+  },
+  {
+    "name": "Gizah",
+    "side": "A",
+    "startingResource": "S",
+    "stages": [
+      {
+        "requirements": { "resources": "SS" },
+        "effects": { "points": 3 }
+      },
+      {
+        "requirements": { "resources": "WWW" },
+        "effects": { "points": 5 }
+      },
+      {
+        "requirements": { "resources": "SSSS" },
+        "effects": { "points": 7 }
+      }
+    ]
+  },
+  {
+    "name": "Gizah",
+    "side": "B",
+    "startingResource": "S",
+    "stages": [
+      {
+        "requirements": { "resources": "WW" },
+        "effects": { "points": 3 }
+      },
+      {
+        "requirements": { "resources": "SSS" },
+        "effects": { "points": 5 }
+      },
+      {
+        "requirements": { "resources": "CCC" },
+        "effects": { "points": 5 }
+      },
+      {
+        "requirements": { "resources": "SSSSP" },
+        "effects": { "points": 7 }
+      }
+    ]
+  },
+  {
+    "name": "Halikarnassus",
+    "side": "A",
+    "startingResource": "L",
+    "stages": [
+      {
+        "requirements": { "resources": "CC" },
+        "effects": { "points": 3 }
+      },
+      {
+        "requirements": { "resources": "OOO" },
+        "effects": { "action": "PLAY_DISCARDED" }
+      },
+      {
+        "requirements": { "resources": "LL" },
+        "effects": { "points": 7 }
+      }
+    ]
+  },
+  {
+    "name": "Halikarnassus",
+    "side": "B",
+    "startingResource": "L",
+    "stages": [
+      {
+        "requirements": { "resources": "OO" },
+        "effects": { "points": 2, "action": "PLAY_DISCARDED" }
+      },
+      {
+        "requirements": { "resources": "CCC" },
+        "effects": { "points": 1, "action": "PLAY_DISCARDED" }
+      },
+      {
+        "requirements": { "resources": "GPL" },
+        "effects": { "action": "PLAY_DISCARDED" }
+      }
+    ]
+  },
+  {
+    "name": "Olympia",
+    "side": "A",
+    "startingResource": "W",
+    "stages": [
+      {
+        "requirements": { "resources": "WW" },
+        "effects": { "points": 3 }
+      },
+      {
+        "requirements": { "resources": "SS" },
+        "effects": { "action": "ONE_FREE_PER_AGE" }
+      },
+      {
+        "requirements": { "resources": "OO" },
+        "effects": { "points": 7 }
+      }
+    ]
+  },
+  {
+    "name": "Olympia",
+    "side": "B",
+    "startingResource": "W",
+    "stages": [
+      {
+        "requirements": { "resources": "WW" },
+        "effects": {
+          "discount": {
+            "resourceTypes": "WSOC",
+            "providers": ["LEFT_PLAYER", "RIGHT_PLAYER"],
+            "discountedPrice": 1
+          }
+        }
+      },
+      {
+        "requirements": { "resources": "SS" },
+        "effects": { "points": 5 }
+      },
+      {
+        "requirements": { "resources": "OOL" },
+        "effects": { "action": "COPY_GUILD" }
+      }
+    ]
+  },
+  {
+    "name": "Rhodos",
+    "side": "A",
+    "startingResource": "O",
+    "stages": [
+      {
+        "requirements": { "resources": "WW" },
+        "effects": { "points": 3 }
+      },
+      {
+        "requirements": { "resources": "CCC" },
+        "effects": { "military": 2 }
+      },
+      {
+        "requirements": { "resources": "OOOO" },
+        "effects": { "points": 7 }
+      }
+    ]
+  },
+  {
+    "name": "Rhodos",
+    "side": "B",
+    "startingResource": "O",
+    "stages": [
+      {
+        "requirements": { "resources": "SSS" },
+        "effects": { "gold": 3, "military": 1, "points": 3 }
+      },
+      {
+        "requirements": { "resources": "OOOO" },
+        "effects": { "gold": 4, "military": 1, "points": 4 }
+      }
+    ]
+  }
+]
