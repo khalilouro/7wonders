@@ -1,15 +1,5 @@
 # 7 Wonders
-Projet académique réalisé en équipe à l'Université Côte d’Azur.
 
-Développement en Java d’une implémentation du jeu Seven Wonders
-incluant plusieurs bots stratégiques. Le projet comprend la gestion
-des règles du jeu, des ressources, du système de cartes et du scoring.
-
-Technologies :
-- Java
-- Programmation orientée objet
-- Algorithmes et logique de jeu
-- Git (travail collaboratif)
 <img align="right" width="100px" src="./assets/logo.jpg">
 
 ![Version Badge](https://img.shields.io/badge/version-v0.0.0+build-red)

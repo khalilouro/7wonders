@@ -1,0 +1,44 @@
+*.class
+*.log
+*.log.*
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+target/*
+pom.xml.*
+release.properties
+
+# IntelliJ
+.idea/*
+*.iml
+out/*
+
+# Eclipse
+.classpath
+.project
+.settings/*
+bin/*
+
+# VSCode
+.vscode/*
+
+# NetBeans
+nbproject//*
+build/*
+dist/*
+
+# LaTeX
+*.aux
+*.bbl
+*.bcf
+*.out
+*.log
+*.blg
+*.run.xml
+*.toc
+*.synctex.gz

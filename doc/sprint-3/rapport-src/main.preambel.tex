@@ -1,0 +1,128 @@
+% Document class and language setting
+\documentclass[12pt, oneside, paper=A4, DIV=15, BCOR=0mm, abstract=true, headings=small]{scrartcl}
+\usepackage[english]{babel} % Changed from ngerman
+\usepackage[utf8]{inputenc}
+
+% Font
+%LModern
+\usepackage{lmodern}
+%Libertine
+%\usepackage{libertinus}
+%\usepackage{libertinust1math}
+
+\usepackage[T1]{fontenc}
+
+% Control headers and footers with scrlayer-scrpage
+% Separator line top and bottom
+\usepackage[headsepline, footsepline]{scrlayer-scrpage}
+
+% Math, symbols, unit representation, chemistry
+\usepackage{amsmath}
+\usepackage{amsxtra}
+\usepackage{eurosym}
+\usepackage{siunitx}  
+\sisetup{locale=US} % Changed from DE
+\usepackage[version=4]{mhchem}
+
+% Typography
+\usepackage[auto]{microtype}
+\clubpenalty = 10000
+\widowpenalty = 10000
+\displaywidowpenalty = 10000
+
+% Inclusion of images, tables, pdf pages, source code
+\usepackage{graphicx}
+\usepackage{multirow, multicol, booktabs}
+\usepackage{threeparttable}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{ltablex}
+\usepackage{subfig}
+\captionsetup[subtable]{position=top}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{placeins}
+
+% Display of URL
+\usepackage{url}
+\urlstyle{same}
+
+% Footnotes, also for tables
+\usepackage{footnote}
+\makesavenoteenv{tabular} 
+
+% Packages for control and review
+\usepackage{todonotes}
+\usepackage{blindtext}
+
+% Representation of bibliography entries
+\usepackage[
+backend=biber,
+style=ieee,
+citestyle=numeric-comp,
+maxbibnames=2,
+firstinits=true
+]{biblatex}
+
+\renewcommand*{\labelnamepunct}{\addcolon\addspace}
+
+% Storage location of the bibliography (*.bib file)
+\addbibresource{bibliography.bib}
+
+% Footnotes
+% Mark in the footnote itself neither superscripted nor set smaller
+% \deffootnote{1em}{1em}{\thefootnotemark\ }
+% left-aligned footnote markers
+\deffootnote{1.5em}{1em}{%
+  \makebox[1.5em][l]{\thefootnotemark}%
+}
+
+% Do not break footnotes
+\interfootnotelinepenalty=10000
+
+% Design of image captions and table headings as well as title page information
+\addtokomafont{caption}{\small}
+\setkomafont{captionlabel}{\sffamily\bfseries}
+\setkomafont{subject}{\Large\bfseries}
+\setkomafont{author}{\normalfont}
+\setkomafont{date}{\normalfont}
+\setkomafont{publishers}{\normalfont}
+
+
+\makeatletter
+% \renewcommand{\l@section}{\@dottedtocline{1}{0em}{0em}}
+% \renewcommand{\l@subsection}{\@dottedtocline{2}{4ex}{3.6em}}
+% \g@addto@macro{\@afterheading}{\vspace{-0.25\baselineskip}}
+\renewcommand{\l@section}{\@dottedtocline{1}{0ex}{1.8em}}
+\renewcommand{\l@subsection}{\@dottedtocline{2}{1.8em}{2.7em}}
+% \g@addto@macro{\@afterheading}{\vspace{-0.25\baselineskip}}
+\makeatother
+
+
+\renewcaptionname{english}{\figurename}{Fig.} % Changed from ngerman and Abb.
+\renewcaptionname{english}{\tablename}{Tab.}  % Changed from ngerman
+
+% Table environments with font size 10 and 7
+\newenvironment{tabular10}{%
+  \fontsize{10}{12}\selectfont\tabular
+}{%
+  \endtabular
+}
+
+\newenvironment{tabular7}{%
+  \fontsize{7}{12}\selectfont\tabular
+}{%
+  \endtabular
+}
+
+% Links and references, pdf settings
+% Update information if necessary!
+\usepackage[
+pdftitle={Final Report}, % Translated from Abschlussmain
+pdfsubject={},
+pdfauthor={},
+pdfkeywords={},  
+% Do not frame links
+hidelinks
+]{hyperref}
+\usepackage[english]{cleveref} % Changed from german

@@ -1,0 +1,36 @@
+[general]
+number_of_players = 7
+shuffle_bots = true
+games_to_play = 500
+enable_real_player = false
+# Valid values: "a", "b", "both", "random"
+wonder_sides_to_use = "both"
+number_of_threads = 4
+
+# Valid strategies: "random", "military", "wonder", "science", "blue", "economic", "adaptive", "minmax", "mar"
+[[bots]]
+strategy = "minmax"
+
+[[bots]]
+strategy = "mar"
+name = "marBot"
+
+[[bots]]
+strategy = "military"
+
+[[bots]]
+strategy = "wonder"
+
+[[bots]]
+strategy = "blue"
+
+[[bots]]
+strategy = "science"
+
+[[bots]]
+strategy = "economic"
+
+[colors]
+main = "cyan"
+accent = "yellow"
+secondary = "white"
